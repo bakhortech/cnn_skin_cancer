@@ -31,10 +31,13 @@ The data set contains the following diseases:
 - The model was trained on a  dataset of about 2357 images of skin cancer types.
 - 80% of the images were used for training, and 20% for validation.
 - The target class lebels were 'actinic keratosis', 'basal cell carcinoma', 'dermatofibroma', 'melanoma', 'nevus', 'pigmented benign keratosis', 'seborrheic keratosis', 'squamous cell carcinoma' and 'vascular lesion'
+- On the initial dataset, training accuracy is observed to be around 90% whereas validation accuracy is around 56%. This shows the model is overfitting
 - The original dataset had class imbalance, so data augmentation was used to add some more images to the training set
 - seborrheic keratosis class has the least number of samples
 - melanoma and pigmented benign keratosis dominate the data in terms of proportionate number of samples
-- Increasing the number of epochs and images has helped reducing overfitting
+- We can see an interesting trend when epoch is increased to a high value around 50. The training accuracy is increasing gradually but the validation accuracy is nearly static with increasing epochs.
+- The gap of validation and train accuracy is increasing with epoch more than 10. Similar trend is there for loss function as well
+- Below 10 epochs, overfitting/underfitting was not there. As the number of epocs are increased above 20 overfitting was observed
 - Sufficiently good accuracy is observed after increasing epochs and class rebalancing
 
 ## Technologies Used
