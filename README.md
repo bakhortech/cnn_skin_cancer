@@ -1,5 +1,5 @@
 # Project Name
-> Multiclass classification model using a custom convolutional neural network in TensorFlow used for melanoma (a type of skin cancer) detection
+> Melanoma Detection
 
 
 ## Table of Contents
@@ -28,13 +28,14 @@ The data set contains the following diseases:
     Vascular lesion
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+- The model was trained on a  dataset of about 2357 images of skin cancer types.
+- 80% of the images were used for training, and 20% for validation.
+- The target class lebels were 'actinic keratosis', 'basal cell carcinoma', 'dermatofibroma', 'melanoma', 'nevus', 'pigmented benign keratosis', 'seborrheic keratosis', 'squamous cell carcinoma' and 'vascular lesion'
+- The original dataset had class imbalance, so data augmentation was used to add some more images to the training set
+- seborrheic keratosis class has the least number of samples
+- melanoma and pigmented benign keratosis dominate the data in terms of proportionate number of samples
+- Increasing the number of epochs and images has helped reducing overfitting
+- Sufficiently good accuracy is observed after increasing epochs and class rebalancing
 
 ## Technologies Used
 - jupyter notebook - version 6.0.3
